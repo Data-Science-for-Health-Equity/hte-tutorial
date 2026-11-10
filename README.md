@@ -28,6 +28,7 @@ You can also download the notebook and run it locally in Jupyter (with the IRker
 |---|---|
 | `hte_tutorial_notebook.ipynb` | The hands-on notebook (R), covering Segments 3–5 of the session |
 | `slides/Brantner_DSHETutorial_HTE_10Sep2026.pptx` | Session slides |
+| `data/simulated_mdd_trial.csv` | The simulated trial dataset the notebook reads (1,000 patients) |
 
 ### Notebook outline
 
@@ -40,7 +41,7 @@ R packages used: `tidyverse`, `grf`, `rpart`, `rpart.plot`, `knitr`, `table1`, `
 
 ## Data
 
-The notebook reads a **simulated** trial dataset, `simulated_mdd_trial.csv`, directly from <https://github.com/v-rodriguez/Assessing-Heterogeneous-Treatment-Effects-Tutorial>. The treatment arms carry real antidepressant names (vortioxetine vs duloxetine) only to make the example feel realistic. **The results are entirely made up and say nothing about the real-world effectiveness of either drug.**
+The notebook reads a **simulated** trial dataset, [`data/simulated_mdd_trial.csv`](data/simulated_mdd_trial.csv), from this repository. It was created for the tutorial and first published at <https://github.com/v-rodriguez/Assessing-Heterogeneous-Treatment-Effects-Tutorial>. Because it is simulated, it includes each patient's true conditional average treatment effect (`true_cate`), so you can check the methods against the truth. The treatment arms carry real antidepressant names (vortioxetine vs duloxetine) only to make the example feel realistic. **The results are entirely made up and say nothing about the real-world effectiveness of either drug.**
 
 ## Part of the DSxHE tutorial series
 
@@ -54,4 +55,8 @@ Health datasets often don't reflect the diversity of the populations they aim to
 
 Questions: [info@datascienceforhealthequity.com](mailto:info@datascienceforhealthequity.com)
 
-The tutorial materials (notebook and slides) are © Carly Brantner. Please contact DSxHE before reusing them beyond personal learning.
+## Licence
+
+The materials in this repository are © 2026 Carly Brantner and released under the [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](LICENSE). You may share and adapt them for any purpose, provided you give appropriate credit, for example:
+
+> Brantner C (2026). *What Works for Whom: Assessing Heterogeneous Treatment Effects.* DSxHE Data Diversity × Statistical Methods Tutorial. https://github.com/Data-Science-for-Health-Equity/hte-tutorial
